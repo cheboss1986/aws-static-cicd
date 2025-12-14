@@ -1,5 +1,7 @@
 name: Deploy staic files to s3 bucket
 
+name: Deploy to S3
+
 on:
   push:
     branches:
@@ -7,6 +9,7 @@ on:
   pull_request:
     branches:
       - main
+
 
 permissions:
   id-token: write
