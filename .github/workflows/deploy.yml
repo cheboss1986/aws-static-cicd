@@ -36,4 +36,10 @@ jobs:
       - name: Upload files to s3
         run:
          aws s3 cp . s3://project2.nicneeneo.space/ --recursive
+      - name: Invalidate CloudFront cache
+        uses: chetan/invalidate-cloudfront-action@v2
+        env: 
+          DISTRIBUTION: E1B7RM6WP8YQ9T
+          PATHS: "/*"
+
 
