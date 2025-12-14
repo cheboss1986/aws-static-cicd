@@ -1,7 +1,5 @@
 name: Deploy staic files to s3 bucket
 
-name: Deploy to S3
-
 on:
   push:
     branches:
